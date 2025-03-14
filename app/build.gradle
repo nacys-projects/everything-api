@@ -19,6 +19,7 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation libs.guava
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '4.0.0-M1'
 }
 
 testing {
