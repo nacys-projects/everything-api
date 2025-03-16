@@ -20,7 +20,7 @@ public class PrimeGenerator {
         int sieveUpperBound = (int)Math.sqrt((double)isPrime.length + 1);
         for (int number = 2; number <= sieveUpperBound; number++) {
             if (isPrime[number]) {
-                crossOffMultiplesOf(number, isPrime);
+                markMultiplesOfFalse(number, isPrime);
             }
         }
     }
@@ -36,7 +36,7 @@ public class PrimeGenerator {
         return primes;
     }
 
-    private void crossOffMultiplesOf(int number, boolean[] arr) {
+    private void markMultiplesOfFalse(int number, boolean[] arr) {
         for (int i = 2 * number; i < arr.length; i += number) {
             arr[i] = false;
         }

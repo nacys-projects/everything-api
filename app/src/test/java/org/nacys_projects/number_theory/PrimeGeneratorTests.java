@@ -26,7 +26,8 @@ class PrimeGeneratorTests {
                 Arguments.of(7, List.of(2, 3, 5, 7)),
                 Arguments.of(8, List.of(2, 3, 5, 7)),
                 Arguments.of(9, List.of(2, 3, 5, 7)),
-                Arguments.of(11, List.of(2, 3, 5, 7, 11))
+                Arguments.of(11, List.of(2, 3, 5, 7, 11)),
+                Arguments.of(25, List.of(2, 3, 5, 7, 11, 13, 17, 19, 23))
         );
     }
 
